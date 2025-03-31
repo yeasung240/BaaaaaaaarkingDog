@@ -10,6 +10,7 @@ def func2(A, B):
 
 
 # Time complexity (n)
+# Using the array characteristic, searching the value that related to a specific value.
 
 def func2(A, B):
   lis = [0] * 1001
