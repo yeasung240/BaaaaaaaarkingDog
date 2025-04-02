@@ -1,0 +1,28 @@
+n = int(input())
+for i in range(n):
+    case = list(input())
+    lis = []
+    stack = []
+    for i in case:
+        if i == '<':
+            if lis:
+                a = lis.pop()
+                stack.append(a)
+        elif i == '>':
+            if stack:
+                a = stack.pop()
+                lis.append(a)
+
+        elif i == '-':
+            if lis:
+                lis.pop()
+            
+        else:
+            lis.append(i)
+
+
+    print(''.join(lis+stack[::-1]))
+            
+
+        
+        
